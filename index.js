@@ -20,8 +20,10 @@ submit.onclick = function () {
   const userGuess = Number(guess.value);
   if (!isInInterval(userGuess)) {
     message.textContent = "Please pick a number between 1-10!";
-  } else if (userGuess != correctNumber) {
-    message.textContent = "Incorrect! Try again";
+  } else if (userGuess > correctNumber) {
+    message.textContent = "Too high! Try again!";
+  } else if (userGuess < correctNumber) {
+    message.textContent = "Too low! Try again!";
   } else if (userGuess == correctNumber) {
     message.textContent = `CORRECT! the number was ${correctNumber}.`;
     playAgain.style.display = "inline";

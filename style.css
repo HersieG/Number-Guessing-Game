@@ -1,19 +1,25 @@
-.container {
-  background: #f3f3f3;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 34em;
-  height: 20em;
-  margin-top: -10em;
-  margin-left: -17em;
-  text-align: center;
-  border: 1px solid;
-  text-align: center;
-  box-shadow: 0 10px 10px 0 rgb(87, 86, 86);
-}
 body {
   background: radial-gradient(circle at 100%, #bdc3c7, #2c3e50);
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #f3f3f3;
+  width: 90%;
+  max-width: 34em;
+  min-height: 20em;
+  text-align: center;
+  border: 1px solid;
+  box-shadow: 0 10px 10px 0 rgb(87, 86, 86);
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .button {
