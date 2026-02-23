@@ -34,5 +34,5 @@ playAgain.onclick = function () {
   playAgain.style.display = "none";
   message.textContent = "";
   guess.value = "";
-  number = Math.floor(Math.random() * 10) + 1;
+  correctNumber = Math.floor(Math.random() * 10) + 1;
 };
